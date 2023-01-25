@@ -71,7 +71,8 @@
                       <ul>
                         <li>reporting organization is a secondary reporter</li>
                         <li>reporting organization is unspecified</li>
-                        <li>reporting organization is in a <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=1705733671&single=true&output=csv" target="_blank">blocklist</a> maintained by The Centre for Humanitarian Data (those that have been discovered to share malformed IATI data)</li>
+                        <li>reporting organization or specific activity is in a <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQxyJ0Y658cIIN1NpbHl4Ah1bZjNnWao7oawdLkl4T_5GC4BF-KMFnzKuzupU-w2Js1_Zy-VmaFJdIW/pub?gid=1705733671&single=true&output=csv" target="_blank">blocklist</a> maintained by The Centre for Humanitarian Data (those that have been discovered to share malformed IATI data)</li>
+                        <li>the <a href="https://iatistandard.org/en/iati-standard/203/codelists/aidtype/" target="_blank">AidType code</a> (at the activity level or a specific transaction) is one of A01 (General budget support), A02 (Sector budget support) or F02 (Debt relief)</li>
                         <li>the activity lists related child activities</li>
                       </ul>
                       <p>The dashboard also excludes any financial transactions that have a value of 0, or are not of types 1 (Incoming Funding), 2 (Outgoing Commitment), 3 (Disbursement), 4 (Expenditure), or 11 (Incoming Commitment) in the <a href="https://iatistandard.org/en/iati-standard/203/codelists/transactiontype/" target="_blank">IATI Transaction Type code list</a>. It also excludes all outgoing financial transactions (types 3 or 4) dated before 2020-01-01, since they are too early to be relevant to the pandemic.</p>
@@ -239,8 +240,8 @@
                 <li>
                   Prepared data (automatically updated every 24 hours)
                   <ul>
-                    <li>Activities and transactions — <a href="https://ocha-dap.github.io/hdx-scraper-iati-viz/transactions.csv">transactions.csv</a> | <a href="https://ocha-dap.github.io/hdx-scraper-iati-viz/transactions.json">transactions.json</a></li>
-                    <li>Financial flows — <a href="https://ocha-dap.github.io/hdx-scraper-iati-viz/flows.csv" target="_blank">flows.csv</a> | <a href="https://ocha-dap.github.io/hdx-scraper-iati-viz/flows.json" target="_blank">flows.json</a></li>
+                    <li>Activities and transactions — <a href="https://ocha-dap.github.io/hdx-scraper-iati-viz/covid/transactions.csv">transactions.csv</a> | <a href="https://ocha-dap.github.io/hdx-scraper-iati-viz/covid/transactions.json">transactions.json</a></li>
+                    <li>Financial flows — <a href="https://ocha-dap.github.io/hdx-scraper-iati-viz/covid/flows.csv" target="_blank">flows.csv</a> | <a href="https://ocha-dap.github.io/hdx-scraper-iati-viz/covid/flows.json" target="_blank">flows.json</a></li>
                   </ul>
                 </li>
                 <li><a href="https://github.com/OCHA-DAP/viz-iati-c19-dashboard" target="_blank">Data visualization front end</a></li>
